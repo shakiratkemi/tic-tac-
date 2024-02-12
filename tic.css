@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/pexels.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 10px solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(170, 72, 169, 1) 0%,
+    rgba(167, 18, 213, 1) 17%,
+    rgba(152, 80, 238, 1) 33%,
+    rgba(164, 164, 223, 1) 50%,
+    rgba(157, 185, 230, 1) 62%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  border-image-slice: 1;
+  color: white;
+  width: 500px;
+  height: 450px;
+  margin: 100px auto;
+}
+
+.cells {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(152, 80, 238, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cell:hover,
+.cell:active {
+  background-color: rgba(157, 185, 230, 1);
+}
+
+.reset-button {
+  border: 1.5px solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(170, 72, 169, 1) 0%,
+    rgba(167, 18, 213, 1) 17%,
+    rgba(152, 80, 238, 1) 33%,
+    rgba(164, 164, 223, 1) 50%,
+    rgba(157, 185, 230, 1) 62%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  border-image-slice: 1;
+  color: rgba(134, 251, 251, 1);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.reset-button:hover {
+  background-color: rgba(157, 185, 230, 1);
+}
